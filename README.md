@@ -1,7 +1,7 @@
 Logspout plugin for Dokku
 =========================
 
-Project: https://github.com/dokku/dokku & https://github.com/gliderlabs/logspout
+Project: https://github.com/dokku/dokku & https://github.com/gliderlabs/logspout & https://github.com/mdsol/logspout-cloudwatch
 
 Requirements
 ------------
