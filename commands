@@ -35,7 +35,7 @@ do_run() {
         --restart=unless-stopped \
         --hostname=${HOSTNAME} \
         --env-file=${DOKKU_LOGSPOUT_ROOT}/ENV \
-        gliderlabs/logspout:${DOKKU_LOGSPOUT_IMAGE_VERSION} \
+        mdsol/logspout:${DOKKU_LOGSPOUT_IMAGE_VERSION} \
         $DOKKU_LOGSPOUT_SYSLOG_SERVER)
   echo "$CID" > "$DOKKU_LOGSPOUT_ROOT/CONTAINER"
 }
@@ -156,7 +156,7 @@ logspout_update_cmd() {
 
   logspout_stop_cmd
   logspout_destroy_cmd
-  docker pull "gliderlabs/logspout:${DOKKU_LOGSPOUT_IMAGE_VERSION}"
+  docker pull "mdsol/logspout:${DOKKU_LOGSPOUT_IMAGE_VERSION}"
   logspout_start_cmd
 }
 
