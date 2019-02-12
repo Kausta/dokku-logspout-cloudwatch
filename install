@@ -21,7 +21,7 @@ install_cmd() {
   chown -R dokku:dokku "$DOKKU_LOGSPOUT_ROOT"
 
   source "$DOKKU_LOGSPOUT_OPTIONS"
-  docker pull "gliderlabs/logspout:${DOKKU_LOGSPOUT_IMAGE_VERSION}"
+  docker pull "mdsol/logspout:${DOKKU_LOGSPOUT_IMAGE_VERSION}"
 }
 
 install_cmd "$@"
